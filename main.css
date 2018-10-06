@@ -1,0 +1,65 @@
+@import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300";
+* {
+  font-family: 'Source Sans Pro', sans-serif;
+  box-sizing: border-box;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    transition: background-color ease-in 300ms;
+    background: #3498DB;
+}
+
+.btn-wrapper {
+  position: fixed;
+  top: calc(80% - 22px);
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.quote{
+    position: relative;
+    top:50%;
+    background: rgba(0,0,0,0.2);
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    padding :30px;
+}
+
+.btn {
+  display: inline-block;
+  box-shadow: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 0;
+  outline: 0;
+  background-color: #6C3483;
+  height: 45px;
+  line-height: 42px;
+  padding: 0 30px;
+  font-size: 20px;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  transition: all .5s;
+  transition-timing-function: cubic-bezier(0.2, 3, 0.4, 1);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.btn:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+.btn:active {
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
+}
